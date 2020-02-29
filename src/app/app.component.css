@@ -8,3 +8,12 @@
     margin-left : 2%;
     margin-right : 2%;
 }
+
+
+.wrapper {  
+
+    text-align: center;
+    vertical-align: center;
+    /* border : 1px solid black; */
+    padding-top : 10%;
+}

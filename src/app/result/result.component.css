@@ -1,14 +1,9 @@
 
-.wrapper {
-    /* display: flex; */
-    height: 500;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-}
-.myTextArea {
-    width: 25vw;
-    height : 300px;
-    border : 1px solid green;
+.wrapper {  
+    height: 20vw;
+    width: 20vw;
     text-align: center;
+    vertical-align: center;
+    border : 1px solid black;
+    padding : 20%;
 }

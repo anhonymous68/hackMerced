@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <app-top></app-top>
 
 <div class="content">
@@ -5,16 +6,17 @@
     <div class="col col-3 myPart">
       <app-camera></app-camera>
     </div>
-    <div class="col col-1"></div>
-
+    <div class="col col-1 wrapper">
+      <i class="fa fa-angle-double-right" style="font-size:36px"></i>
+    </div>
     <div class="col col-3 myPart">
       <app-code></app-code>
     </div>
-    <div class="col col-1 myPart">
-
+    <div class="col col-1 myPart wrapper">
+      <i class="fa fa-angle-double-right" style="font-size:36px"></i>
     </div>
     <div class="col col-2 myPart">
-      <app-result [result] = 'compileResult'></app-result>
+      <app-result [result]='compileResult'></app-result>
     </div>
   </div>
 </div>

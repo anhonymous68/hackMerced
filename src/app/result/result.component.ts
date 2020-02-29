@@ -15,12 +15,12 @@ export class ResultComponent implements OnInit {
   }
 
   ngOnChange() {
-    this.result = this.compileStringService.compileResult;
+    // this.result = this.compileStringService.compileResult;
 
   }
 
   ngOnInit() {
-    this.result = this.compileStringService.compileResult;
+    // this.result = this.compileStringService.compileResult;
   }
 
 }

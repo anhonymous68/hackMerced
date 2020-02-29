@@ -9,4 +9,8 @@ export class AppComponent {
   title = 'Hack-Merc';
 
   compileResult = '';
+
+  constructor() {
+    this.compileResult = 'a';
+  }
 }
