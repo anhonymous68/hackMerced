@@ -6,4 +6,10 @@
     vertical-align: center;
     border : 1px solid black;
     padding : 20%;
+    margin-top : 2%;
+    margin-left : 5%;
+}
+
+.myBtn {
+    margin-left: 40%;
 }

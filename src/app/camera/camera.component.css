@@ -1,8 +1,14 @@
 
 .wrapper {
     display: flex;
-    height: 500;
+    height: 600;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    margin-top : 5%;
+}
+
+.actionBtn {
+    margin-left: 30%;
+    margin-top : 10%;
 }
