@@ -1,12 +1,20 @@
 <app-top></app-top>
-<div class="row">
-  <div class="col col-4 myPart">
-    <app-camera></app-camera>
-  </div>
-  <div class="col col-4">
-    <app-code></app-code>
-  </div>
-  <div class="col col-4">
-    <app-result></app-result>
+
+<div class="content">
+  <div class="row">
+    <div class="col col-3 myPart">
+      <app-camera></app-camera>
+    </div>
+    <div class="col col-1"></div>
+
+    <div class="col col-3 myPart">
+      <app-code></app-code>
+    </div>
+    <div class="col col-1 myPart">
+
+    </div>
+    <div class="col col-2 myPart">
+      <app-result [result] = 'compileResult'></app-result>
+    </div>
   </div>
 </div>

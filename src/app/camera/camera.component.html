@@ -1,4 +1,23 @@
 <div class="wrapper" (window:resize)="onResize($event)">
-    <webcam [width]="width" [height]="300" (imageCapture)="handleImage($event)">
-    </webcam>
+    <div class="col">
+        <div class="row">
+            <webcam [width]="width" [height]="300" [trigger]="triggerObservable" (imageCapture)="handleImage($event)"
+                *ngIf="showWebcam" [allowCameraSwitch]="allowCameraSwitch" [switchCamera]="nextWebcamObservable"
+                [videoOptions]="videoOptions" [imageQuality]="1" (cameraSwitched)="cameraWasSwitched($event)"
+                (initError)="handleInitError($event)">
+            </webcam>
+        </div>
+        <div class="row">
+            <button class="actionBtn" (click)="triggerSnapshot();">Take A Snapshot</button>
+            <!-- <button class="actionBtn" (click)="toggleWebcam();">Toggle Webcam</button>
+            <br />
+            <button class="actionBtn" (click)="showNextWebcam(true);" [disabled]="!multipleWebcamsAvailable">Next
+                Webcam</button> -->
+        </div>
+
+    </div>
+
+
+
 </div>
+<!-- <img [src]="webcamImage.imageAsDataUrl"/> -->

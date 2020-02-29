@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { CompileStringService } from 'src/service/compileString.Service';
 
 @Component({
   selector: 'app-result',
@@ -7,11 +8,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResultComponent implements OnInit {
 
-  constructor() { 
+  @Input() result : string;
+  
+  constructor(private compileStringService : CompileStringService) { 
     
   }
 
+  ngOnChange() {
+    this.result = this.compileStringService.compileResult;
+
+  }
+
   ngOnInit() {
+    this.result = this.compileStringService.compileResult;
   }
 
 }

@@ -10,6 +10,7 @@ import { ResultComponent } from './result/result.component';
 import { CodeComponent } from './code/code.component';
 
 import { WebcamModule } from 'ngx-webcam';
+import { CompileStringService } from 'src/service/compileString.Service';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,7 @@ import { WebcamModule } from 'ngx-webcam';
     WebcamModule,
     FormsModule
   ],
-  providers: [],
+  providers: [CompileStringService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

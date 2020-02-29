@@ -8,5 +8,7 @@
 }
 .myTextArea {
     width: 25vw;
-    
+    height : 300px;
+    border : 1px solid green;
+    text-align: center;
 }

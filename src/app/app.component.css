@@ -1,4 +1,10 @@
 .myPart {
     /* border : 1px solid black; */
-    padding: 3%;
+    padding: 1%;
+}
+
+.content {
+    margin-top : 5%;
+    margin-left : 2%;
+    margin-right : 2%;
 }
