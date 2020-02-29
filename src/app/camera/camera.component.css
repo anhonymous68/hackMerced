@@ -1,0 +1,8 @@
+
+.wrapper {
+    display: flex;
+    height: 500;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}

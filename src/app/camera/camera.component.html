@@ -1,0 +1,4 @@
+<div class="wrapper" (window:resize)="onResize($event)">
+    <webcam [width]="width" [height]="300" (imageCapture)="handleImage($event)">
+    </webcam>
+</div>
