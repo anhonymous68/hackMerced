@@ -1,15 +1,29 @@
 
 .wrapper {  
-    height: 20vw;
-    width: 20vw;
+    height: 50vh;
+    width: 50vw;
     text-align: center;
     vertical-align: center;
     border : 1px solid black;
     padding : 20%;
-    margin-top : 2%;
-    margin-left : 5%;
+
 }
 
 .myBtn {
-    margin-left: 40%;
+    /* margin-left: 50vw;
+    margin-right: 50vw; */
+    width : 50vw;
+    height : 10vh;
+    background-color: rgb(39, 39, 39);
+    border : 3px solid white;
+    margin-top:2vh;
+}
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.myBtn:hover {
+    background-color: rgb(191, 189, 201);
+    color : rgb(39, 39, 39);
 }

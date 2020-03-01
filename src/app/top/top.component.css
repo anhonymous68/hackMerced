@@ -1,8 +1,15 @@
 .navbar {
     color : white;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
 }
 
 .navbar-brand,.nav-item
 {
-    color:white;
+    color:rgb(39,39,39);
+    letter-spacing: 5px;
+    font-size: 40px;
+    font-family:sans-serif;
 }

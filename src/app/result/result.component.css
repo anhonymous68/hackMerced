@@ -1,10 +1,17 @@
 
 .wrapper {  
-    height: 20vw;
-    width: 20vw;
+    height: auto;
+    width: auto;
     text-align: center;
     vertical-align: center;
     border : 1px solid black;
-    padding : 20%;
-    margin-top : 2%;
+    background-color: white;
+    margin-left : 20%;
+    margin-right : 20%;
+
+}
+
+.row {
+    display: flex;
+    justify-content: center;
 }

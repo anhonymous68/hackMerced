@@ -1,14 +1,38 @@
 
 .wrapper {
     display: flex;
-    height: 600;
+    /* height: 600; */
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    margin-top : 5%;
+
 }
 
 .actionBtn {
     margin-left: 30%;
     margin-top : 10%;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.myBtn {
+    /* margin-left: 50vw;
+    margin-right: 50vw; */
+    width : 50vw;
+    height : 10vh;
+    background-color: rgb(39, 39, 39);
+    
+    margin-top:2vh;
+}
+
+.myBtn:hover {
+    background-color: rgb(191, 189, 201);
+    color : rgb(39, 39, 39);
+}
+
+.wb {
+    border : 3px solid white;
 }

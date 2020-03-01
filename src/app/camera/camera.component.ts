@@ -18,8 +18,8 @@ export class CameraComponent implements OnInit {
   @HostListener('window:resize', ['$event'])
   onResize(event?: Event) {
     const win = !!event ? (event.target as Window) : window;
-    this.width = win.innerWidth;
-    this.height = win.innerHeight;
+    this.width = win.innerWidth * 0.9;
+    this.height = win.innerHeight * 0.9;
   }
 
   // toggle webcam on/off

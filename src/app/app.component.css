@@ -1,19 +1,15 @@
-.myPart {
-    /* border : 1px solid black; */
-    padding: 1%;
-}
-
-.content {
-    margin-top : 5%;
-    margin-left : 2%;
-    margin-right : 2%;
-}
-
-
 .wrapper {  
-
     text-align: center;
     vertical-align: center;
+    /* margin : 5vw; */
     /* border : 1px solid black; */
-    padding-top : 10%;
+    padding: 5vw;
+}
+.transfer {
+    text-align: center;
+    vertical-align: center;
+}
+
+.myContainer {
+    background-color: rgb(39, 39, 39);
 }
