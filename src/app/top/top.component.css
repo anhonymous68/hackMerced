@@ -12,9 +12,17 @@
 
 }
 
+.logo {
+    background-image: url(../../assets/logo.png);
+}
+
 .letter
 {
     letter-spacing: 5px;
     font-size: 30px;
     font-family:sans-serif;
+}
+
+img {
+    height: 10vh;
 }

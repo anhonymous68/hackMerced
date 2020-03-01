@@ -8,6 +8,11 @@
 .transfer {
     text-align: center;
     vertical-align: center;
+    /* padding-top: vh; */
+}
+
+.transfer:hover {
+    color:rgb(244,124,72);
 }
 
 .myContainer {
@@ -38,6 +43,7 @@ text-decoration: none;
 
 .myButton:hover {
     background-color: rgb(60, 60, 60);
+    border-color:rgb(244,124,72);
 }
 
 .line {
