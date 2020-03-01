@@ -29,10 +29,18 @@
 }
 
 .myBtn:hover {
-    background-color: rgb(191, 189, 201);
-    color : rgb(39, 39, 39);
+    background-color: rgb(50, 50, 50);
+    /* color : rgb(39, 39, 39); */
 }
 
 .wb {
     border : 3px solid white;
+    border-radius: 10px;
+}
+
+.letter
+{
+    letter-spacing: 5px;
+    font-size: 40px;
+    font-family:sans-serif;
 }

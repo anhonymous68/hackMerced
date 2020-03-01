@@ -8,6 +8,7 @@
     background-color: white;
     margin-left : 20%;
     margin-right : 20%;
+    border-radius: 5px;
 
 }
 
@@ -15,3 +16,4 @@
     display: flex;
     justify-content: center;
 }
+

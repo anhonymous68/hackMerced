@@ -1,11 +1,12 @@
 
 .wrapper {  
     height: 50vh;
-    width: 50vw;
-    text-align: center;
-    vertical-align: center;
+    width: 75vw;
+    /* text-align: center;
+    vertical-align: center; */
     border : 1px solid black;
-    padding : 20%;
+    border-radius: 10px;
+    padding : 2%;
 
 }
 
@@ -16,6 +17,7 @@
     height : 10vh;
     background-color: rgb(39, 39, 39);
     border : 3px solid white;
+    border-radius: 10px;
     margin-top:2vh;
 }
 .row {
@@ -24,6 +26,14 @@
 }
 
 .myBtn:hover {
-    background-color: rgb(191, 189, 201);
-    color : rgb(39, 39, 39);
+    background-color: rgb(50, 50, 50);
+    /* color : rgb(39, 39, 39); */
+}
+
+
+.letter
+{
+    letter-spacing: 5px;
+    font-size: 40px;
+    font-family:sans-serif;
 }
