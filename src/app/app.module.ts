@@ -11,6 +11,8 @@ import { CodeComponent } from './code/code.component';
 
 import { WebcamModule } from 'ngx-webcam';
 import { CompileStringService } from 'src/service/compileString.Service';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { CompileStringService } from 'src/service/compileString.Service';
     BrowserModule,
     AppRoutingModule,
     WebcamModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [CompileStringService],
   bootstrap: [AppComponent]

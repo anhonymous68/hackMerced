@@ -1,8 +1,8 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { Subject, Observable } from 'rxjs';
-
+import { HttpClient } from '@angular/common/http';
 import { WebcamImage, WebcamInitError, WebcamUtil } from 'ngx-webcam';
-
+declare var Buffer;
 @Component({
   selector: 'app-camera',
   templateUrl: './camera.component.html',
@@ -12,7 +12,7 @@ export class CameraComponent implements OnInit {
   width = 100;
   height = 100;
 
-  constructor() {
+  constructor(private httpClient : HttpClient) {
     this.onResize();
   }
   @HostListener('window:resize', ['$event'])
@@ -75,7 +75,15 @@ export class CameraComponent implements OnInit {
   
     this.webcamImage = webcamImage;
     console.log(this.webcamImage);
-    this.base64Image = webcamImage.imageAsBase64;
+
+    console.log('response: ');
+    var base64String = Buffer.from(this.webcamImage.imageAsDataUrl, 'base64');
+    localStorage.setItem("imgData", base64String);
+
+    this.httpClient.post('http://localhost:5000/api', this.webcamImage.imageAsBase64)
+    .subscribe(responseData => {
+      console.log(responseData);
+    })
   }
 
   cameraWasSwitched(deviceId: string): void {

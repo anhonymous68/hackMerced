@@ -30,34 +30,34 @@
     </div>
   
     <div class="row line">
-      <button class = 'btn myButton'><a href = '#camera' style="scroll-behavior:smooth;">Get Started</a></button>
+      <button class = 'btn myButton' (click) = "one()" ><a href = '#camera' style="scroll-behavior:smooth;">Get Started</a></button>
     </div>
     
   </div>
   
 </div>
 
-<div class="myContainer"  >
+<div class="myContainer"  *ngIf = "forOne">
   <div class="wrapper" id="camera">
     <app-camera ></app-camera>
   </div>
 </div>
 
-<div class="transfer">
+<div class="transfer"  *ngIf = "forOne">
   <i class="fa fa-angle-double-down" style="font-size:100px"></i>
 </div>
 
-<div class="myContainer">
+<div class="myContainer" *ngIf = "forOne">
   <div class="wrapper">
     <app-code></app-code>
   </div>
 </div>
 
-<div class="transfer">
+<div class="transfer"  *ngIf = "forOne">
   <i class="fa fa-angle-double-down" style="font-size:100px"></i>
 </div>
 
-<div class="myContainer">
+<div class="myContainer" *ngIf = "forOne">
   <div class="wrapper">
     <app-result [result]='compileResult'></app-result>
   </div>

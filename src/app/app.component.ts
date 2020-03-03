@@ -7,10 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Hack-Merc';
-
+  forOne = false;
   compileResult = '';
 
   constructor() {
     this.compileResult = 'a';
+    this.forOne = false;
+  }
+
+  one() {
+    this.forOne = true;
   }
 }
